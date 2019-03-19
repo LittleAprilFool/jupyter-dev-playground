@@ -1,0 +1,12 @@
+{
+    "compilerOptions": {
+        "alwaysStrict": true,
+        "module": "amd",
+        "noImplicitAny": true,
+        "target": "es5",
+        "sourceMap": true
+    },
+    "files": [
+        "src/index.ts"
+    ],
+}

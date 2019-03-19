@@ -1,0 +1,26 @@
+{
+  "name": "webpack-jupyter-extension-reloader",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Watch for changes and force the reload of the Jupyter extension",
+  "main": "dist/webpack-chrome-extension-reloader.js",
+  "scripts": {
+    "build": "NODE_ENV=production webpack",
+    "test": "NODE_ENV=test webpack && mocha dist/tests.js",
+    "watch": "NODE_ENV=development webpack --watch",
+    "analyze": "NODE_ENV=production webpack --env.analyze",
+    "sample": "NODE_ENV=development webpack --config sample/webpack.plugin.js --watch",
+    "prepublish": "yarn build",
+    "format": "prettier --write \"{src,client}/**/*.ts\""
+  },
+  "devDependencies": {
+    "ts-loader": "^5.3.3",
+    "typescript": "^3.3.3333",
+    "webpack": "^4.29.6",
+    "webpack-bundle-analyzer": "^3.1.0",
+    "webpack-cli": "^3.3.0"
+  },
+  "dependencies": {
+    "@types/lodash": "^4.14.123"
+  }
+}
