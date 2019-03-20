@@ -5,9 +5,15 @@
         "noImplicitAny": true,
         "target": "es5",
         "sourceMap": true,
+        "moduleResolution": "node",
+        "typeRoots": [
+            "./typings"
+       ]
     },
     "files": [
         "./src/index.ts",
      ],
-    "include": ["src/**/*"],
+    "include": [
+        "src/**/*",
+    ],
 }

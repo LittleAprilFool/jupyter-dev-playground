@@ -5,6 +5,8 @@ module.exports = {
     mode,
     devtool: 'inline-source-map',
     entry: './sample/src/index.ts',
+    target: 'node',
+    stats: 'verbose',
     module: {
       rules: [
         {
@@ -14,7 +16,7 @@ module.exports = {
       ]
     },
     resolve: {
-      extensions: [".ts", ".tsx", ".js", ".json",".d.ts"]
+      extensions: [".ts", ".tsx",".d.ts"]
     },
     output: {
       filename: 'bundle.js',
